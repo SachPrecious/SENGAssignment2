@@ -34,12 +34,19 @@ class MainActivity : AppCompatActivity() {
             editor.putBoolean("STATUS",married)
             editor.apply()
 
-
+            Toast.makeText(this,"Data Saved",Toast.LENGTH_SHORT).show()
         }
         buttonLoadData.setOnClickListener {
             val name = sharedPreferences.getString("NAME","Default")
             val married= sharedPreferences.getBoolean("STATUS",false)
-            textView.text="Name :"+name+"Married?"+married
+            textView.text=name
+            if (!married){
+                Toast.makeText(this,"Not Married",Toast.LENGTH_SHORT).show()
+
+            }else{
+                Toast.makeText(this,"Married",Toast.LENGTH_SHORT).show()
+
+            }
 
         }
 
