@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SharedPreferencesAssignment2</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="load_data">Load Data</string>
+    <string name="save_data">Save Data</string>
+    <string name="are_you_married">Are You Married?</string>
+</resources>
